@@ -10,7 +10,7 @@ module Moveable
           <img alt=\"\" src=\"/assets/tree/up.png\" />
         </a>"
       else
-        "<img alt=\"\" src=\"tree/up_default.png\">"
+        "<img alt=\"\" src=\"/assets/tree/up_default.png\">"
       end
       link_2 =
       # right_sibling - is for gem awesome_nested_set
@@ -19,7 +19,7 @@ module Moveable
           <img alt=\"\" src=\"/assets/tree/down.png\" />
         </a>"
       else
-        "<img alt=\"\" src=\"tree/down_default.png\">"
+        "<img alt=\"\" src=\"/assets/tree/down_default.png\">"
       end
       raw(link_1 + link_2)
     end
