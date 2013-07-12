@@ -26,7 +26,8 @@ module Moveable
 
     def object_classify(object=nil)
       return if object.nil?
-      object.class.to_s.pluralize.downcase
+      # object.class.to_s.pluralize.downcase
+      object.class.table_name
     end
   end
 end
