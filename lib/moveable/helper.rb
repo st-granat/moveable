@@ -7,19 +7,19 @@ module Moveable
       # left_sibling - is for gem awesome_nested_set
       if !object.left_sibling.blank?
         "<a data-method=\"post\" title=\"Передвинуть выше\" href=\"/admin/#{object_type}/#{object.id}/move_up\">
-          <img alt=\"\" src=\"/assets/tree/up.png\" />
+          <img alt=\"\" src=\"#{asset_path('tree/up.png')}\" />
         </a>"
       else
-        "<img alt=\"\" src=\"/assets/tree/up_default.png\">"
+        "<img alt=\"\" src=\"#{asset_path('tree/up_default.png')}\">"
       end
       link_2 =
       # right_sibling - is for gem awesome_nested_set
       if !object.right_sibling.blank?
         "<a data-method=\"post\" title=\"Передвинуть ниже\" href=\"/admin/#{object_type}/#{object.id}/move_down\">
-          <img alt=\"\" src=\"/assets/tree/down.png\" />
+          <img alt=\"\" src=\"#{asset_path('tree/down.png')}\" />
         </a>"
       else
-        "<img alt=\"\" src=\"/assets/tree/down_default.png\">"
+        "<img alt=\"\" src=\"#{asset_path('tree/down_default.png')}\">"
       end
       raw(link_1 + link_2)
     end
