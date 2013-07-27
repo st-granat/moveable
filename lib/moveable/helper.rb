@@ -29,5 +29,19 @@ module Moveable
       # object.class.to_s.pluralize.downcase
       object.class.table_name
     end
+
+    def movable_css_classes(object)
+      classes = []
+      classes << 'movable-first' if object.first?
+      classes << 'movable-last' if object.last?
+      classes.join(' ')
+    end
+
+    def nested_movable_css_classes(object)
+      classes = []
+      classes << 'movable-first' if object.left_sibling.nil?
+      classes << 'movable-last' if object.right_sibling.nil?
+      classes.join(' ')
+    end
   end
 end
