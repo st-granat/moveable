@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["railscode@gmail.com"]
   spec.description   = "Move object up and down with Rails and nested set tree"
   spec.summary       = "Move object up and down with Rails and nested set tree"
-  spec.homepage      = "https://github.com/vav/moveable"
+  spec.homepage      = "https://github.com/st-granat/moveable"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
